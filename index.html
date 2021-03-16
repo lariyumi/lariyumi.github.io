@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Página Pessoal - Larissa Yumi Ohashi</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="claro">
+    <div class="alinharBotao">
+        <button id="acender"><img src="img/solTemaClaro.png" alt="Imagem Sol" width="30px" height="30px" />Tema claro</button>
+        <button id="escurecer"><img src="img/luaTemaClaro.png" alt="Imagem Lua" width="30px" height="30px" />Tema escuro</button>
+    </div>
+    <header>
+        <figure>
+            <img id="fotoPerfil" src="img/foto.jpg" alt="Larissa" />
+        </figure>
+        <h1>Larissa Yumi Ohashi</h1>
+    </header>
+    <section>
+        <h2>Sobre mim</h2>
+        <article>
+            <h3>Objetivo</h3>
+            <p>Estágio na área de informática.</p>
+        </article>
+        <article>
+            <h3>Formação</h3>
+            <p><b>Técnico em informática Integrado ao Ensino Médio</b> - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Rua Pedro Vicente, 625 - Canindé - São Paulo - SP. <b>Conclusão prevista:</b> 2021</p>
+            <p><b>Ensino Fundamental</b> - Escola Santa Marina - Av. Guilherme Giorgi, 430 - Vila Carrão - São Paulo - SP. <b>Conclusão:</b> 2017</p>
+        </article>
+        <article>
+            <h3>Habilidades e competências</h3>
+            <p>Programação em nível básico nas linguagens C, Java, HTML5, CSS3, JavaScript e SQL. Disposta a aprender novas habilidades.</p>
+        </article>
+        <article>
+            <h3>Idiomas</h3>
+            <p>Inglês - Intermediário</p>
+        </article>
+        <article>
+            <h3>Projetos</h3>
+            <p><a href="https://github.com/lariyumi/respostas-ifsp">Site "Respostas IFSP"</a> - Projeto escolar realizado na matéria Projeto Integrado (PJI) realizado em grupo.</p>
+        </article>
+    </section>
+    <footer>
+        <h2>Informações de contato</h2>
+        <p><b>E-mail:</b> <a class="email" href="mailto:lariyumi92@gmail.com">lariyumi92@gmail.com</a></p>
+    </footer>
+</body>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+    //Código com JQuery
+    $(document).ready(function() {
+        $("#fotoPerfil").mouseenter(function() {
+            $(this).removeClass("fotoSemMouse");
+            $(this).addClass("fotoComMouse");
+        });
+        $("#fotoPerfil").mouseleave(function() {
+            $(this).removeClass("fotoComMouse");
+            $(this).addClass("fotoSemMouse");
+        });
+        $("#acender").click(function() {
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+            $("#acender img").attr("src", "img/solTemaClaro.png");
+            $("#escurecer img").attr("src", "img/luaTemaClaro.png");
+        });
+        $("#escurecer").click(function() {
+            $("body").removeClass("claro");
+            $("body").addClass("escuro");
+            $("#acender img").attr("src", "img/solTemaEscuro.png");
+            $("#escurecer img").attr("src", "img/luaTemaEscuro.png");
+        });
+        $("#acender").mouseenter(function() {
+            $(this).css("cursor", "pointer");
+        });
+        $("#acender").mouseleave(function() {
+            $(this).css("cursor", "default");
+        });
+        $("#escurecer").mouseenter(function() {
+            $(this).css("cursor", "pointer");
+        });
+        $("#escurecer").mouseleave(function() {
+            $(this).css("cursor", "default");
+        });
+    });
+
+    //Códico com JavaScript
+    /*var foto = document.getElementById("fotoPerfil");
+
+    foto.onmouseover = function() {
+        foto.classList.remove("fotoSemMouse");
+        foto.classList.add("fotoComMouse");
+    };
+
+    foto.onmouseout = function() {
+        foto.classList.remove("fotoComMouse");
+        foto.classList.add("fotoSemMouse");
+    };*/
+
+</script>
+
+</html>
