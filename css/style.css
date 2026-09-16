@@ -15,6 +15,7 @@ h1, h2, h3.skills, section {
 
 h1 {
     margin-bottom: 50px;
+    line-height: 40px;
 }
 
 ul {
@@ -67,4 +68,35 @@ ul {
 
 #right-column p, ul {
     text-align: justify;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        color: #002659;
+    }
+    
+    .flex-container {
+        display: block;
+    }
+
+    #left-column {
+        background-color: #fff;
+        color: #000;
+        padding-bottom: 0px;
+    }
+
+    #left-column a {
+        color: #000;
+    }
+
+    #left-column h2 {
+        background-color: #fff;
+        color: #002659;
+        padding: 0px;
+        text-align: start;
+    }
+
+    #right-column {
+        padding-top: 0px;
+    }
 }
