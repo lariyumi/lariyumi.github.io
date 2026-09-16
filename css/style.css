@@ -5,6 +5,14 @@
     line-height: 25px;
 }
 
+.light {
+    background-color: #fff;
+}
+
+.dark {
+    background-color: #2e2e2e;
+}
+
 h3.projetos {
     margin-bottom: 10px;
 }
@@ -24,8 +32,9 @@ ul {
 
 img {
     width: 30px;
-    position: relative;
-    float: right;
+    position: fixed;
+    top: 25px;
+    right: 25px;
     cursor: pointer;
 }
 
@@ -109,17 +118,25 @@ img {
     text-align: justify;
 }
 
-#moon {
+#sun {
     display: none;
 }
 
 @media (max-width: 900px) {
-    h1 {
+    .light h1 {
         color: #002659;
+    }
+
+    .dark h1 {
+        color: #3f86e4;
     }
     
     .flex-container {
         display: block;
+    }
+
+    .dark {
+        background-color: #2e2e2e;
     }
 
     .light #left-column {
@@ -151,7 +168,7 @@ img {
 
     .dark #left-column h2 {
         background-color: #2e2e2e;
-        color: #fff;
+        color: #3f86e4;
     }
 
     #left-column h2 {

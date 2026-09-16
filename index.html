@@ -12,6 +12,8 @@
 
 <body>
     <main id="body" class="light">
+        <img id="sun" src="/img/sun.png" onclick="switchTheme(1)">
+        <img id="moon" src="/img/moon.png" onclick="switchTheme(0)">
         <div class="flex-container">
             <div id="left-column" class="column">
                 <h1>Larissa Yumi Ohashi</h1>
@@ -64,8 +66,7 @@
                 </section>
             </div>
             <div id="right-column" class="column">
-                <img id="sun" src="/img/sun.png" onclick="switchTheme(0)">
-                <img id="moon" src="/img/moon.png" onclick="switchTheme(1)">
+                
                 <section>
                     <h2>RESUMO</h2>
                     <p>Estudante no curso de Bacharelado em Ciência e Tecnologia da UFABC e apaixonada por programação, busco uma oportunidade de estágio que me permita aplicar os conhecimentos adquiridos ao longo da graduação e desenvolver novas habilidades na área de desenvolvimento de software em um ambiente profissional.</p>
@@ -114,13 +115,13 @@
 
         function switchTheme(theme) {
             if (theme == 0) {
-                document.getElementById("sun").style.display = "none";
-                document.getElementById("moon").style.display = "block";
+                document.getElementById("sun").style.display = "block";
+                document.getElementById("moon").style.display = "none";
                 document.getElementById("body").classList.remove("light");
                 document.getElementById("body").classList.add("dark");
             } else {
-                document.getElementById("moon").style.display = "none";
-                document.getElementById("sun").style.display = "block";
+                document.getElementById("moon").style.display = "block";
+                document.getElementById("sun").style.display = "none";
                 document.getElementById("body").classList.remove("dark");
                 document.getElementById("body").classList.add("light");
             }
