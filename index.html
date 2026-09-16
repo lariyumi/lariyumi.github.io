@@ -5,100 +5,106 @@
 <head>
     <title>Currículo - Larissa Yumi Ohashi</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <main>
-        <div>
-            <h1>Larissa Yumi Ohashi</h1>
-            <section>
-                <h2>INFORMAÇÕES DE CONTATO</h2>
-                <p><b>Endereço:</b> Vila Carrão - São Paulo, SP</p>
-                <p><b>Telefone:</b> (11) 98677-2686</p>
-                <p><b>E-mail:</b> <a href="mailto:lariyumi92@gmail.com">lariyumi92@gmail.com</a></p>
-                <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/larissa-ohashi/" target="_blank">https://www.linkedin.com/in/larissa-ohashi/</a></p>
-            </section>
-
-            <section>
-                <h2>HABILIDADES</h2>
+        <div class="flex-container">
+            <div id="left-column" class="column">
+                <h1>Larissa Yumi Ohashi</h1>
                 <section>
-                    <h3>Hard Skills:</h3>
+                    <h2>INFORMAÇÕES DE CONTATO</h2>
+                    <p><b>Endereço:</b> Vila Carrão - São Paulo, SP</p>
+                    <p><b>Telefone:</b> (11) 98677-2686</p>
+                    <p><b>E-mail:</b> <a href="mailto:lariyumi92@gmail.com">lariyumi92@gmail.com</a></p>
+                    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/larissa-ohashi/" target="_blank">https://www.linkedin.com/in/larissa-ohashi/</a></p>
+                </section>
+
+                <section>
+                    <h2>HABILIDADES</h2>
+                    <div class="flex-list">
+                        <section class="column-list">
+                            <h3 class="skills">Hard Skills:</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>PHP</li>
+                                <li>C</li>
+                                <li>C#</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>Laravel</li>
+                                <li>Spring Boot</li>
+                                <li>Bootstrap</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </section>
+                        <section class="column-list">
+                            <h3 class="skills">Soft Skills</h3>
+                            <ul>
+                                <li>Organização</li>
+                                <li>Empatia</li>
+                                <li>Persistência</li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>IDIOMAS</h2>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>PHP</li>
-                        <li>C</li>
-                        <li>C#</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>Laravel</li>
-                        <li>Spring Boot</li>
-                        <li>Bootstrap</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
+                        <li>Inglês intermediário</li>
                     </ul>
                 </section>
+            </div>
+            <div id="right-column" class="column">
                 <section>
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Organização</li>
-                        <li>Empatia</li>
-                        <li>Persistência</li>
-                    </ul>
+                    <h2>RESUMO</h2>
+                    <p>Estudante no curso de Bacharelado em Ciência e Tecnologia da UFABC e apaixonada por programação, busco uma oportunidade de estágio que me permita aplicar os conhecimentos adquiridos ao longo da graduação e desenvolver novas habilidades na área de desenvolvimento de software em um ambiente profissional.</p>
                 </section>
-            </section>
 
-            <section>
-                <h2>IDIOMAS</h2>
-                <ul>
-                    <li>Inglês intermediário</li>
-                </ul>
-            </section>
-        </div>
-        <div>
-            <section>
-                <h2>RESUMO</h2>
-                <p>Estudante no curso de Bacharelado em Ciência e Tecnologia da UFABC e apaixonada por programação, busco uma oportunidade de estágio que me permita aplicar os conhecimentos adquiridos ao longo da graduação e desenvolver novas habilidades na área de desenvolvimento de software em um ambiente profissional.</p>
-            </section>
+                <section>
+                    <h2>FORMAÇÃO ACADÊMICA</h2>
+                    <section>
+                        <h3>Bacharelado em Ciência e Tecnologia</h3>
+                        <p>Universidade Federal do ABC - Santo André, SP</p>
+                        <p><b>Conclusão prevista:</b> 2027</p>
+                    </section>
+                    <section>
+                        <h3>Técnico em Informática Integrado ao Ensino Médio</h3>
+                        <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - São Paulo, SP</p>
+                        <p><b>Conclusão:</b> 2021</p>
+                    </section>
+                </section>
 
-            <section>
-                <h2>FORMAÇÃO ACADÊMICA</h2>
                 <section>
-                    <h3>Bacharelado em Ciência e Tecnologia</h3>
-                    <p>Universidade Federal do ABC - Santo André, SP</p>
-                    <p><b>Conclusão prevista:</b> 2027</p>
+                    <h2>PROJETOS ACADÊMICOS E PESSOAIS</h2>
+                    <section>
+                        <h3 class="projetos">Monitorando - Projeto da disciplina de Práticas e Desenvolvimento de Sistemas - PDS</h3>
+                        <ul>
+                            <li><b>Desenvolvimento Back-End:</b> Construção de uma arquitetura MVC com o Framework Laravel.</li>
+                            <li><b>Trabalho em Equipe:</b> Atuação em equipe colaborativa de 6 integrantes, participando de reuniões semanais para alinhamento de entregas, distribuição de tarefas e resolução de impedimentos técnicos.</li>
+                            <li><b>Impacto:</b> Auxílio aos alunos na busca por informações sobre monitorias que melhor atendam às suas necessidades e dúvidas. </li>
+                            <li><b>Link para o repositório:</b> <a href="https://github.com/EquipeLoading/Monitorando-PDS">https://github.com/EquipeLoading/Monitorando-PDS</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="projetos">Informações de Universidades - Projeto Pessoal</h3>
+                        <ul>
+                            <li><b>Desenvolvimento Full-Stack:</b> Construção de uma arquitetura MVC com o framework Laravel.</li>
+                            <li><b>Design Responsivo:</b> Boa usabilidade e visualização dos dados em diferentes tamanhos de tela.</li>
+                            <li><b>Impacto:</b> Auxílio na escolha da universidade que melhor se encaixa no perfil do usuário, por meio da disponibilização de informações sobre seus cursos e funcionamento.</li>
+                            <li><b>Link para o repositório:</b> <a href="https://github.com/lariyumi/infos-universidades">https://github.com/lariyumi/infos-universidades</a></li>
+                        </ul>
+                    </section>
                 </section>
-                <section>
-                    <h3>Técnico em Informática Integrado ao Ensino Médio</h3>
-                    <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - São Paulo, SP</p>
-                    <p><b>Conclusão:</b> 2021</p>
-                </section>
-            </section>
-
-            <section>
-                <h2>PROJETOS ACADÊMICOS E PESSOAIS</h2>
-                <section>
-                    <h3>Monitorando - Projeto da disciplina de Práticas e Desenvolvimento de Sistemas - PDS</h3>
-                    <ul>
-                        <li><b>Desenvolvimento Back-End:</b> Construção de uma arquitetura MVC com o Framework Laravel.</li>
-                        <li><b>Trabalho em Equipe:</b> Atuação em equipe colaborativa de 6 integrantes, participando de reuniões semanais para alinhamento de entregas, distribuição de tarefas e resolução de impedimentos técnicos.</li>
-                        <li><b>Impacto:</b> Auxílio aos alunos na busca por informações sobre monitorias que melhor atendam às suas necessidades e dúvidas. </li>
-                        <li><b>Link para o repositório:</b> <a href="https://github.com/EquipeLoading/Monitorando-PDS">https://github.com/EquipeLoading/Monitorando-PDS</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Informações de Universidades - Projeto Pessoal</h3>
-                    <ul>
-                        <li><b>Desenvolvimento Full-Stack:</b> Construção de uma arquitetura MVC com o framework Laravel.</li>
-                        <li><b>Design Responsivo:</b> Boa usabilidade e visualização dos dados em diferentes tamanhos de tela.</li>
-                        <li><b>Impacto:</b> Auxílio na escolha da universidade que melhor se encaixa no perfil do usuário, por meio da disponibilização de informações sobre seus cursos e funcionamento.</li>
-                        <li><b>Link para o repositório:</b> <a href="https://github.com/lariyumi/infos-universidades">https://github.com/lariyumi/infos-universidades</a></li>
-                    </ul>
-                </section>
-            </section>
+            </div>
         </div>
     </main>
 </body>

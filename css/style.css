@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+h3.projetos {
+    margin-bottom: 10px;
+}
+
+h1, h2, h3.skills, section {
+    margin: 0px 0px 25px 0px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+ul {
+    margin-left: 15px;
+}
+
+.flex-list {
+    display: flex;
+}
+
+.column-list {
+    flex: 1;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+#left-column {
+    background-color: #002659;
+    color: #fff;
+    padding: 30px;
+    flex: 0.3;
+}
+
+#left-column a {
+    color: #fff;
+}
+
+#left-column h2 {
+    background-color: #0030ad;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#right-column {
+    padding: 30px;
+    flex: 0.7;
+}
+
+#right-column a {
+    color: #000;
+}
+
+#right-column h2 {
+    color: #002659;
+}
+
+#right-column p, ul {
+    text-align: justify;
+}
